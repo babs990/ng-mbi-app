@@ -1,0 +1,38 @@
+nav{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+
+#logo{
+    width: 95px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+#menu{
+    display: flex;
+    color: #fff;
+    gap:80px;
+    align-items: center;
+    font-size: var(--body-font-size-petit);
+    width: 650px;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+#services,#devis{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#contact{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
+    border-radius: 33px;
+    color: #000000;
+    font-weight: var(--title-font-weight);
+}

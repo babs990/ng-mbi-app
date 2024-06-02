@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    * {
+        margin: 0;
+        font-family: 'Kalam';
+    }
+        
+    /*color*/
+    --first-font : 'Kalam';
+    --font-weight : 700;
+    
+    /*text */
+    --title-font : 'Kalam';
+    --title-font-weight : 700;    
+    --title-font-size-grand: 3rem;
+    --title-line-height-grand: 3.5rem;
+    
+    --header-font : "Kalam";
+    --header-font-weight :400;
+    --header-font-size-grand : 2rem;
+    --header-line-height-grand : 2.375rem;
+    
+    --body-font : "Kalam";
+    --body-font-weight :400;
+    --body-font-size-grand : 1.5rem;
+    --body-line-height-grand : 1.75rem;
+        
+    --title-font-size-moyen: 2.5rem;
+    
+    --header-font-size-moyen : 2rem;
+    
+    --body-font-size-moyen : 1.375rem;
+    
+    --title-font-size-petit: 2rem;
+    
+    --header-font-size-petit : 1.5rem;
+    
+    --body-font-size-petit : 1rem;
+    }
+        
+    @keyframes fade-up{
+        0%{
+            opacity: 0;
+            transform: translateY(30px) scale(0.9);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    @keyframes fade-down{
+        0%{
+            opacity: 0;
+            transform: translateY(-30px) scale(0.9);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+    
+    @keyframes fade-right{
+        0%{
+            opacity: 0;
+            transform: translateX(-10px) scale(0.9);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        } 
+    }
+    @keyframes fade-left{
+        0%{
+            opacity: 0;
+            transform: translateX(10px) scale(0.9);
+        }
+        100%{
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        } 
+
+}
