@@ -8,6 +8,7 @@ nav{
     width: 95px;
     margin-left: 100px;
     margin-right: auto;
+    cursor: pointer;
 }
 
 #menu{
@@ -21,10 +22,38 @@ nav{
     margin-right: 100px;
 }
 
+#acceuil,#apropos{
+    cursor: pointer;
+}
+
 #services,#devis{
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+}
+
+#dropService,#dropDevis{
+    background-color: #FA5608;
+    position :absolute ;
+    margin-top: 17px;
+    width: 100px;
+    text-align: center;
+    border-radius : 5px;
+}
+
+.marge{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.marge:hover{
+    background-color: #000000;
 }
 
 #contact{
@@ -35,4 +64,17 @@ nav{
     border-radius: 33px;
     color: #000000;
     font-weight: var(--title-font-weight);
+    cursor: pointer;
+}
+
+#contact:hover{
+    scale: 110%;
+    transition-duration: 0.4s;
+    color: #fff;
+}
+
+.cover:hover{
+    color: #FA5608;
+    transition-duration: 0.4s;
+    scale: 110%;
 }

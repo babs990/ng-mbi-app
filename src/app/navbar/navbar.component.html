@@ -1,21 +1,44 @@
 <nav id="nav">
-    <div id="logo">
+    <div id="logo" class="cover">
         <img src="Images/logo.svg" alt="logo">
     </div>
     <div id="menu">
-        <div id="acceuil">
+        <div id="acceuil" class="cover">
             Acceuil
         </div>
-        <div id="apropos">
+        <div id="apropos" class="cover">
             À propos
         </div>
-        <div id="services">
-            Services
-            <img src="Images/dropIcon.svg" alt="drop">
+        <div id="listServices" appHide>
+            <div id="services" class="cover" appDropDirective>
+                Services
+                <img  alt="drop">
+            </div>
+            <div id="dropService" class="hide list" (mouseleave)="removeHide()">
+                <div id="civil" class="marge">
+                    Genie civil
+                </div>
+                <div id="immobilier" class="marge">
+                    Immobilier
+                </div>
+                <div id="terrassement" class="marge">
+                    Terrassement
+                </div>
+            </div>    
         </div>
-        <div id="devis">
-            Devis
-            <img src="Images/dropIcon.svg" alt="drop">
+        <div id="listDevis" appHide>
+            <div id="devis" class="cover" appDropDirective>
+                Devis
+                <img alt="drop">
+            </div>
+            <div id="dropDevis" class="hide list" (mouseleave)="removeHide()">
+                <div id="construction" class="marge">
+                    Construction
+                </div>
+                <div id="plan" class="marge">
+                    Plan
+                </div>
+            </div>        
         </div>
         <div id="contact">
             Contact
