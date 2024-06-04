@@ -2,14 +2,14 @@
     <div id="logo" class="cover">
         <img src="Images/logo.svg" alt="logo">
     </div>
-    <div id="menu">
-        <div id="acceuil" class="cover">
+    <div id="menu" >
+        <div id="acceuil" class="cover" (mouseenter)="removeHide()">
             Acceuil
         </div>
-        <div id="apropos" class="cover">
+        <div id="apropos" class="cover" (mouseenter)="removeHide()">
             À propos
         </div>
-        <div id="listServices" appHide>
+        <div id="listServices" >
             <div id="services" class="cover" appDropDirective>
                 Services
                 <img  alt="drop">
@@ -26,7 +26,7 @@
                 </div>
             </div>    
         </div>
-        <div id="listDevis" appHide>
+        <div id="listDevis" >
             <div id="devis" class="cover" appDropDirective>
                 Devis
                 <img alt="drop">
@@ -40,8 +40,43 @@
                 </div>
             </div>        
         </div>
-        <div id="contact">
+        <div id="contact" (mouseenter)="removeHide()">
             Contact
         </div>
     </div>
+    <div id="dropImg" class="cover" (click)="dropMenu()">
+        <img src="Images/List.svg" alt="list">
+    </div>    
 </nav>
+<div id="list" class="display">
+    <div class="marge"> Acceuil </div>
+    <div class="marge"> À propos </div>
+    <div class="marge"> 
+        Services 
+        <img src="Images/dropIcon.svg" alt="drop" (click)="dropService()" class="dropMove">
+    </div>
+    <div id="lesServices" class="display">
+        <div class="marge">
+            Genie civil
+        </div>
+        <div class="marge">
+            Immobilier
+        </div>
+        <div class="marge">
+            Terrassement
+        </div>    
+    </div>
+    <div class="marge"> 
+        Devis 
+        <img src="Images/dropIcon.svg" alt="drop" (click)="dropDevis()" class="dropMove">
+    </div>
+    <div id="lesDevis" class="display">
+        <div class="marge">
+            Construction
+        </div>
+        <div class="marge">
+            Plan
+        </div>
+    </div>
+    <div class="marge"> Contact </div>
+</div>
