@@ -1,8 +1,152 @@
 #landing{
-background-image: url('../../../public/Images/background.svg');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-height: 680px;
+    background-image: url('../../../public/Images/background.svg');
+    background-size: 680px cover;
+    height: 680px;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    gap: 150px;
+    animation: fade-up 3s;
+}
+
+#imgHead{
+    margin-top: 60px;
+    animation: fade-up 1s;
+}
+
+#headDescription{
+    margin-top: 170px;
+}
+
+#accroche{
+    font-size: var(--title-font-size-grand);
+    font-weight: var(--title-font-weight);
+    width: 420px;
+}
+
+#petitText{
+    font-size: var(--body-font-size-petit);
+    font-weight: var(--body-font-petit);
+    width: 330px;
+    margin-top: 20px;
+}
+
+#boutonHead{
+    font-size: var(--body-font-size-petit);
+    font-weight: var(--title-font-weight);
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    width: 300px ;
+    height: 50px;
+    background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
+    color: black;
+    border-radius: 62px;
+    padding-left: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#boutonHead:hover{
+    scale: 105%;
+    transition-duration: 0.3s;
+}
+
+#reseau{
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    display: grid;
+    gap: 10px;
+    animation: fade-left 6s;
+}
+
+.anime{
+    cursor: pointer;
+}
+
+.anime:hover{
+    scale: 105%;
+}
+
+@media screen and (max-width : 1080px) {
+    #header{
+        gap: 100px;
+    }
+    #imgHead{
+        margin-top: 96px;
+    }  
+
+    #imgHead img{
+        width: 219px;
+        height: 334px;
+    }
+    #accroche{
+        font-size: var(--title-font-size-moyen);
+        width: 350px;
+    }  
+    #headDescription{
+        margin-top: 100px;
+    }
+    #landing{
+        background-size: 490px cover;
+        height: 490px;
+    }       
+}
+@media screen and (max-width : 720px) {
+    #header{
+        display: grid;
+        grid-template-rows: 340px 265px;
+        grid-template-areas: 
+        'des'
+        'im';
+        justify-content: center;
+    }
+    #imgHead{
+        margin-top: 0;
+        grid-area: im;
+    }  
+
+    #imgHead img{
+        width: 118px;
+        height: 180px;
+    }
+    #accroche{
+        font-size: var(--title-font-size-petit);
+        width: 280px;
+    }  
+    #headDescription{
+        margin-top: 50px;
+        grid-area: des;
+    }
+    #landing{
+        background-size: 680px cover;
+        height: 680px;
+    } 
+    #boutonHead{
+        width: 150px ;
+        height: 70px;
+        font-size: 12px;
+        padding-left: 25px; 
+        padding-right: 25px;
+        gap: 0;
+    }   
+    #boutonText{
+        width: 110px;
+    }  
+    #petitText{
+        width: 260px;
+    } 
+}
+@media screen and (max-width : 310px) {
+    #accroche{
+        width:100%;
+    } 
+    #petitText{
+        width: 100%;
+    }  
 }
