@@ -1,8 +1,8 @@
 #landing{
     background-image: url('../../../public/Images/background.svg');
-    background-size: 680px cover;
+    background-size:cover;
+    background-repeat: no-repeat;
     height: 680px;
-    width: 100%;
 }
 
 #header{
@@ -41,25 +41,30 @@
     align-items: center;
     display: flex;
     gap: 5px;
-    width: 300px ;
+    width: 280px ;
     height: 50px;
     background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
     color: black;
     border-radius: 62px;
-    padding-left: 35px;
+    padding-left: 30px;
     margin-top: 20px;
     cursor: pointer;
 }
 
 #boutonHead:hover{
     scale: 105%;
-    transition-duration: 0.3s;
+    transition-duration: 0.6s;
+}
+
+#boutonHead img:hover{
+    scale: 105%;
+    transition-duration: 0.6s;
 }
 
 #reseau{
     position: absolute;
     right: 15px;
-    bottom: 100px;
+    bottom: 250px;
     display: grid;
     gap: 10px;
     animation: fade-left 6s;
@@ -70,7 +75,8 @@
 }
 
 .anime:hover{
-    scale: 105%;
+    scale: 110%;
+    transition-duration: 0.5s;
 }
 
 @media screen and (max-width : 1080px) {
@@ -93,7 +99,7 @@
         margin-top: 100px;
     }
     #landing{
-        background-size: 490px cover;
+        background-size: cover;
         height: 490px;
     }       
 }
@@ -107,7 +113,7 @@
         justify-content: center;
     }
     #imgHead{
-        margin-top: 0;
+        margin-top: 1px;
         grid-area: im;
     }  
 
@@ -124,7 +130,8 @@
         grid-area: des;
     }
     #landing{
-        background-size: 680px cover;
+        background-image: url('../../../public/Images/backgroundPetit.svg');
+        background-size: cover;
         height: 680px;
     } 
     #boutonHead{
