@@ -80,3 +80,7 @@
         } 
 
 }
+html{
+    scrollbar-color: #FA5608 black;
+    scrollbar-width:thin;
+}

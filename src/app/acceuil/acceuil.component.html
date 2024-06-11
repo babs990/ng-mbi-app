@@ -26,3 +26,55 @@
     </div>
 </div>
 
+<div id="nousChoisir">
+    <div id="titreNousChoisir">
+        Pourquoi nous choisir ?
+    </div>
+
+    <div id="descriptionNousChoisir">
+        @for (item of Choix; track item) {
+            <div class="card">
+                <img [src]="item.img">
+                <div id="desItem">
+                    {{item.des}}
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div id="apropos">
+    <div id="desAprpos">
+        <img src="Images/femmeDebout.svg" alt="Image">
+        <div id="gridApropos">
+            <div id="titreAprpos"> Qui sommes nous ? </div>
+            <div id="souligner"></div>
+            <div id="textApropos">Avec l’essor exponentiel du domaine immobilier , il est crucial de mettre en place des structures compétentes pour répondre aux exigences du marché. C’est dans cette logique que l’entreprise MBI SARL a vu le jour.MBI SARL est une entreprise générale qui s’active dans le domaine de l’immobilier , du BTP et du terrassement. Nous réalisons vos projets de construction  de la conception  à la concrétisation.</div>
+        </div>    
+    </div>
+    <div id="boutonApropos">
+        <div id="txtBoutApropos">Consultez nos services</div>
+        <img src="Images/bouton.svg" alt="bouton">
+    </div>
+</div>
+
+<div id="rec"></div>
+
+<div id="realisation">
+    <div id="titreRealisation">
+        Quelques uns de nos réalisation  
+    </div>  
+    <div id="imgRealisation">
+        <img src="Images/fleche.svg" alt="image">
+    </div>
+    <div id="video">
+        <video src="CONCEPTION 3D MBI SARL.mp4"></video>
+        <div id="videoImg" (click)="playVideo()">
+            <img src="Images/boutonPlay.svg" alt="image">
+        </div>
+    </div>
+</div>
+
+<div>
+    <app-footer></app-footer>
+</div>

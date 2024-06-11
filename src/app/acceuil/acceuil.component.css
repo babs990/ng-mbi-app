@@ -5,6 +5,8 @@
     height: 680px;
 }
 
+#nav{
+}
 #header{
     display: flex;
     color: #fff;
@@ -41,12 +43,12 @@
     align-items: center;
     display: flex;
     gap: 5px;
-    width: 280px ;
-    height: 50px;
+    width: 300px ;
+    height: 60px;
     background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
     color: black;
     border-radius: 62px;
-    padding-left: 30px;
+    padding-left: 15px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -79,6 +81,165 @@
     transition-duration: 0.5s;
 }
 
+#nousChoisir{
+    background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
+    color: black;
+}
+
+#titreNousChoisir{
+    padding-top: 30px;
+    font-size: var(--header-font-size-grand);
+    font-weight: var(--title-font-weight);
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+}
+
+#descriptionNousChoisir{
+    display: grid;
+    grid-template-columns: repeat(3,245px);
+    margin-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    gap: 50px;
+    font-weight: var(--title-font-weight);
+}
+
+.card{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 40px;
+    gap: 40px;
+    box-shadow: rgba(0, 0, 0, 0.384) 0px 60px 40px -7px;
+}
+
+.card:hover{
+    background-color: #ffffffc8;
+    transition-duration: 2s;
+    scale: 110%;
+}
+
+#descriptionNousChoisir img{
+    height: 41px;
+}
+
+#desItem{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#apropos,#realisation{
+    background-image: url('../../../public/Images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#desAprpos{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+}
+
+#gridApropos{
+    color: #fff;
+    font-size: var(--title-font-size-grand);
+    font-weight: var(--title-font-weight);
+}
+
+#textApropos{
+    font-size: var(--body-font-size-grand); 
+    width: 515px;
+    font-weight: var(--body-font-weight);
+    margin-top: 40px;
+}
+
+#souligner{
+    height: 5px;
+    background-color: #fff;
+    width: 405px;
+}
+
+#boutonApropos{
+    margin-top: 60px;
+    font-size: var(--body-font-size-petit);
+    font-weight: var(--title-font-weight);
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    width: 260px ;
+    height: 50px;
+    background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
+    color: black;
+    border-radius: 62px;
+    cursor: pointer;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#boutonApropos:hover{
+    scale: 110%;
+    transition-duration: 0.6s;
+}
+
+#rec{
+    background: linear-gradient(270deg, #FA5608 0%, #F9AD89 100%);
+    height: 5px;
+    width: 100%;
+}
+
+#imgRealisation{
+    width: 58px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titreRealisation{
+    color: #fff;
+    font-size: var(--header-font-size-grand);
+    font-weight: var(--title-font-weight);
+    width: 454px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 605px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#video video{
+    width: 605px;
+    border-radius: 33px;
+}
+
+#videoImg{
+    position: relative;
+    width: 100px;
+    right: 58%;
+    cursor: pointer;
+}
+
+#videoImg img{
+    border-radius: 133px;
+    cursor: pointer;
+}
+
+#videoImg img:hover{
+    scale: 110%;
+    background-color: #ffffffb2;
+    transition-duration: 0.5s;
+}
+
 @media screen and (max-width : 1080px) {
     #header{
         gap: 100px;
@@ -101,12 +262,53 @@
     #landing{
         background-size: cover;
         height: 490px;
-    }       
+    }  
+    #apropos{
+        background-image: url('../../../public/Images/backgroundPetit.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #desAprpos{
+        gap: 100px;
+    }
+    #desAprpos img{
+        width: 182px;
+        height: 264px;
+        margin-top: 20px;
+    }
+    #gridApropos{
+        font-size: var(--title-font-size-petit);
+    }
+    #textApropos{
+        font-size: var(--body-font-size-petit); 
+        width: 410px;
+    }   
+    #souligner{
+        width: 275px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    #titreAprpos{
+        justify-content: center;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #realisation{
+        background-image: url('../../../public/Images/backgroundPetit.svg');
+        background-size: cover;
+    }
+}
+@media screen and (max-width : 870px) {
+    #descriptionNousChoisir{
+        grid-template-columns: 245px;
+    }
 }
 @media screen and (max-width : 720px) {
     #header{
+        margin-top: 20px;
         display: grid;
-        grid-template-rows: 340px 265px;
+        grid-template-rows: 320px 265px;
         grid-template-areas: 
         'des'
         'im';
@@ -116,7 +318,6 @@
         margin-top: 1px;
         grid-area: im;
     }  
-
     #imgHead img{
         width: 118px;
         height: 180px;
@@ -135,10 +336,10 @@
         height: 680px;
     } 
     #boutonHead{
-        width: 150px ;
+        width: 180px ;
         height: 70px;
         font-size: 12px;
-        padding-left: 25px; 
+        padding-left: 15px; 
         padding-right: 25px;
         gap: 0;
     }   
@@ -147,6 +348,79 @@
     }  
     #petitText{
         width: 260px;
+    } 
+    #titreNousChoisir{
+        font-size: var(--header-font-size-petit);
+        width: 248px;
+    }
+    #desAprpos{
+        display: grid;
+    }
+    #desAprpos img{
+        position: absolute;
+        margin-top: 450px;
+        width: 94px;
+        height: 137px;
+        right: 5%;
+}
+    #textApropos{
+        width: 210px;
+    }   
+    #souligner{
+        width: 214px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    #titreAprpos{
+        font-size: var(--header-font-size-petit);
+        justify-content: center;
+        width: 210px;
+    }
+    #boutonApropos{
+        font-size: 12px;
+        width: 150px;
+        margin-left: 30%;
+        gap: 5px;
+        height: 50px;
+    }
+    #txtBoutApropos{
+        width: 70px;
+    }
+    #titreRealisation{
+        font-size: var(--header-font-size-petit);
+        width: 340px;
+    } 
+    #video{
+        max-width: 325px;
+    }
+    
+    #video video{
+        width: 100%;
+        border-radius: 23px;
+    }
+    
+    #videoImg{
+        right: 58%;
+    }  
+    #videoImg img{
+        width: 52px;
+    }  
+}
+@media screen and (max-width : 400px) {
+    #desAprpos img{
+        right: 0;
+    }
+    #boutonApropos{
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width : 360px) {
+    #video{
+        width: 200px;
+    }
+    #titreRealisation{
+        font-size: var(--header-font-size-petit);
+        width: 100%;
     } 
 }
 @media screen and (max-width : 310px) {
