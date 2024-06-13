@@ -9,16 +9,16 @@
         <div id="listServices" >
             <div id="services" class="loop">
                 Services
-                <img src="Images/dropIcon.svg" alt="drop" (click)="dropService">
+                <img src="Images/dropIcon.svg" alt="drop" (click)="dropService()">
             </div>
             <div id="dropService" class="vide">
-                <div id="civil"  class="loop" class="marge">
+                <div id="civil" class="loop marge margeHaut">
                     Genie civil
                 </div>
-                <div id="immobilier"  class="loop" class="marge">
+                <div id="immobilier" class="loop marge">
                     Immobilier
                     </div>
-                <div id="terrassement" class="loop" class="marge">
+                <div id="terrassement" class="loop">
                     Terrassement
                 </div>
             </div>    
@@ -26,13 +26,13 @@
         <div id="listDevis" >
             <div id="devis" class="loop">
                 Devis
-                <img src="Images/dropIcon.svg" alt="drop">
+                <img src="Images/dropIcon.svg" alt="drop" (click)="dropDevis()">
             </div>
             <div id="dropDevis" class="vide">
-                <div id="construction"  class="loop marge">
+                <div id="construction"  class="loop marge margeHaut" >
                     Construction
                 </div>
-                <div id="plan" class="loop marge">
+                <div id="plan" class="loop">
                     Plan
                 </div>
             </div>        
@@ -44,4 +44,30 @@
             <img src="Images/logo.svg" alt="logo">
         </div>
     </div>
+    <div id="footContact">
+        <div>
+            Nos reseaux
+        </div>
+        <div id="iconReseau" class="flex">
+            <img src="Images/facebook .svg" alt="icon" class="loop" >
+            <img src="Images/insta.svg" alt="icon" class="loop" >
+            <img src="Images/whatsapp.svg" alt="icon" class="loop" >
+        </div>
+        <div id="whatsapp" class="flex loop">
+            <img src="Images/whatsapp2.svg" alt="icon">
+            <div> +221 78 184 79 96 </div>
+        </div>
+        <div id="mail" class="flex loop">
+            <img src="Images/mail.svg" alt="icon">
+            <div> mbisarl.sn&#64;gmail.com</div>
+        </div>
+        <div id="lieu" class="flex loop">
+            <img src="Images/lieu.svg" alt="icon">
+            <div id="lieuTexte"> Yoff, Route de l'aeroport pres de la SENELEC </div>
+        </div>
+    </div>
+</div>
+<div id="copyRight">
+    <img src="Images/copyright.svg" alt="">
+    <div id="txtCopyright">2024 Babacar Nguirane</div>
 </div>

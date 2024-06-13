@@ -15,7 +15,19 @@ export class FooterComponent {
    * masquer ou afficher liste services
    */
   dropService(){
-    let element = this.el.nativeElement.querySelector('#dropService')
+    const element = this.el.nativeElement.querySelector('#dropService')
+    if(element.classList.contains('vide')){
+      element.classList.remove('vide')
+    }else{
+      element.classList.add('vide')
+    }
+  }
+
+  /**
+   * masquer ou afficher liste de devis
+   */
+  dropDevis(){
+    const element = this.el.nativeElement.querySelector('#dropDevis')
     if(element.classList.contains('vide')){
       element.classList.remove('vide')
     }else{

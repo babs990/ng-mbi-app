@@ -3,12 +3,14 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    gap: 100px;
 }
 
-#menu{
+#menu,#footContact{
     display: grid;
-    gap: 10px;
+    gap: 20px;
     color: #fff;
     font-size: var(--body-font-size-petit);
 }
@@ -21,6 +23,10 @@
     margin-bottom: 10px;
 }
 
+.margeHaut{
+    margin-top: 10px;
+}
+
 .loop{
     cursor: pointer;
 }
@@ -30,3 +36,32 @@
     transition-duration: 0.6s;
 }
 
+.flex{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#lieuTexte{
+    width: 170px;
+}
+
+#copyRight{
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 80px;
+}
+
+#txtCopyright{
+    padding-top: 5px;
+}
+
+@media screen and (max-width:430px) {
+    #footer{
+        display: grid;
+        gap: 30px;
+    }
+}
