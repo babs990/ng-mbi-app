@@ -1,10 +1,11 @@
 import { Component,ElementRef, OnInit } from '@angular/core';
 import { DropDirective } from './drop.directive';
+import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [DropDirective],
+  imports: [DropDirective,NgOptimizedImage],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

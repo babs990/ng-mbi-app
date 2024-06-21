@@ -24,7 +24,7 @@ export class DropDirective {
   /* Recuperation et modification dropIcon */
   private setDrop(drop : string){
     if(this.el.nativeElement.querySelector('img')){
-      this.el.nativeElement.querySelector('img').setAttribute("src",drop)
+      this.el.nativeElement.querySelector('img').setAttribute("ngSrc",drop)
     }
   }
 
