@@ -5,6 +5,14 @@
     height: 680px;
 }
 
+#nav2{
+    position: absolute;
+    background-color: #000;
+}
+
+.none{
+    display: none;
+}
 #header{
     display: flex;
     color: #fff;
