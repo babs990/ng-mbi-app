@@ -251,12 +251,13 @@
         gap: 100px;
     }
     #imgHead{
-        margin-top: 96px;
+        margin-top: -16px;
+        width: 219px;
+        height: 334px;
     }  
 
     #imgHead img{
-        width: 219px;
-        height: 334px;
+        width: 100%;
     }
     #accroche{
         font-size: var(--title-font-size-moyen);
@@ -321,12 +322,13 @@
         justify-content: center;
     }
     #imgHead{
-        margin-top: 1px;
+        margin-top: -190px;
         grid-area: im;
-    }  
-    #imgHead img{
         width: 118px;
         height: 180px;
+    }  
+    #imgHead img{
+        width: 100%;
     }
     #accroche{
         font-size: var(--title-font-size-petit);
